@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/Wordle.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/resources/Wordle.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="brand"> <img class="logo" src="/images/logo.png"><div class="brand-title">ConsoleJam</div></div>
+        <ul>
+            <% navbar.forEach((item)=>{%>
+                <li><%-item%></li>
+            <%})%>
+        </ul>
+    </nav>
+    <hr>
+    <header>
+        <h1>Wordle</h1>
+    </header>
+    <hr>
+    <div id="gameBoard">
+        <div id="guess0">
+            <div id="row00"></div>
+            <div id="row01"></div>
+            <div id="row02"></div>
+            <div id="row03"></div>
+            <div id="row04"></div>
+        </div>
+        <div id="guess1">
+            <div id="row10"></div>
+            <div id="row11"></div>
+            <div id="row12"></div>
+            <div id="row13"></div>
+            <div id="row14"></div>
+        </div>
+        <div id="guess2">
+            <div id="row20"></div>
+            <div id="row21"></div>
+            <div id="row22"></div>
+            <div id="row23"></div>
+            <div id="row24"></div>
+        </div>
+        <div id="guess3">
+            <div id="row30"></div>
+            <div id="row31"></div>
+            <div id="row32"></div>
+            <div id="row33"></div>
+            <div id="row34"></div>
+        </div>
+        <div id="guess4">
+            <div id="row40"></div>
+            <div id="row41"></div>
+            <div id="row42"></div>
+            <div id="row43"></div>
+            <div id="row44"></div>
+        </div>
+        <div id="guess5">
+            <div id="row50"></div>
+            <div id="row51"></div>
+            <div id="row52"></div>
+            <div id="row53"></div>
+            <div id="row54"></div>
+        </div>
+    </div>
+    <div class="Game-keyboard">
+        <div class="Game-keyboard-row">
+            <div onclick="input('q')" class="Game-keyboard-button">q</div>
+            <div onclick="input('w')" class="Game-keyboard-button">w</div>
+            <div onclick="input('e')" class="Game-keyboard-button">e</div>
+            <div onclick="input('r')" class="Game-keyboard-button">r</div>
+            <div onclick="input('t')" class="Game-keyboard-button">t</div>
+            <div onclick="input('y')" class="Game-keyboard-button">y</div>
+            <div onclick="input('u')" class="Game-keyboard-button">u</div>
+            <div onclick="input('i')" class="Game-keyboard-button">i</div>
+            <div onclick="input('o')" class="Game-keyboard-button">o</div>
+            <div onclick="input('p')" class="Game-keyboard-button">p</div>
+        </div>
+        <div class="Game-keyboard-row">
+            <div onclick="input('a')" class="Game-keyboard-button">a</div>
+            <div onclick="input('s')" class="Game-keyboard-button">s</div>
+            <div onclick="input('d')" class="Game-keyboard-button">d</div>
+            <div onclick="input('f')" class="Game-keyboard-button">f</div>
+            <div onclick="input('g')" class="Game-keyboard-button">g</div>
+            <div onclick="input('h')" class="Game-keyboard-button">h</div>
+            <div onclick="input('j')" class="Game-keyboard-button">j</div>
+            <div onclick="input('k')" class="Game-keyboard-button">k</div>
+            <div onclick="input('l')" class="Game-keyboard-button">l</div>
+        </div>
+        <div class="Game-keyboard-row">
+            <div onclick="input('Enter')" class="Game-keyboard-button Game-keyboard-button-wide">Enter</div>
+            <div onclick="input('z')" class="Game-keyboard-button">z</div>
+            <div onclick="input('x')" class="Game-keyboard-button">x</div>
+            <div onclick="input('c')" class="Game-keyboard-button">c</div>
+            <div onclick="input('v')" class="Game-keyboard-button">v</div>
+            <div onclick="input('b')" class="Game-keyboard-button">b</div>
+            <div onclick="input('n')" class="Game-keyboard-button">n</div>
+            <div onclick="input('m')" class="Game-keyboard-button">m</div>
+            <div onclick="input('⌫')" class="Game-keyboard-button Game-keyboard-button-wide">⌫</div>
+        </div>
+    </div>
+</body>
+</html>

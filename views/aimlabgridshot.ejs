@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" type="text/css" />
+    <title>Gridshot</title>
+    <style>
+      * {
+        cursor: url(CrosshairPrecision.cur), default;
+        margin: 0;
+        background-color: black;
+        color: white;
+        font-family: sans-serif;
+        font-weight: bolder;
+      }
+      .gridshot-heading{
+        text-align: center;
+        font-family: cursive;
+        margin: 20px;
+      }
+  
+
+      .box {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto;
+        padding: 20px;
+        margin: auto;
+        width: 750px;
+        height: 650px;
+      }
+
+      button {
+        padding: 10px;
+        margin: 5px;
+        width: 95px;
+        font-weight: bolder;
+        background-color: aliceblue;
+        color: black;
+      }
+      .btn-container {
+        text-align: center;
+      }
+      .invisible {
+        visibility: hidden;
+      }
+      .ball {
+        width: 85px;
+        height: 85px;
+        margin-left: 10px;
+        margin-right: 10px;
+        background-color: yellow;
+        border-radius: 50%;
+        box-shadow: inset -25px -25px 40px rgba(26, 12, 12, 0.5);
+      }
+    </style>
+
+    <script src="/resources/gridshot.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <div class="brand"> <img class="logo" src="/images/logo.png"><div class="brand-title">ConsoleJam</div></div>
+         <ul>
+            <% navbar.forEach((item)=>{%>
+                <li><%-item%></li>
+            <%})%>
+         </ul>
+     </nav>
+
+
+    <h1 class="gridshot-heading">GridShot</h1><hr>
+    <h1 style="text-align: center">
+      <div class="timeword">TIME :</div>
+      <div class="time">0</div>
+    </h1>
+    <div class="box">
+      <div class="ball b1"></div>
+      <div class="ball b2 invisible"></div>
+      <div class="ball b3"></div>
+      <div class="ball b4 invisible"></div>
+      <div class="ball b5"></div>
+      <div class="ball b6 invisible"></div>
+      <div class="ball b7 invisible"></div>
+      <div class="ball b8 invisible"></div>
+      <div class="ball b9 invisible"></div>
+      <div class="ball b1 invisible"></div>
+      <div class="ball b11 invisible"></div>
+      <div class="ball b12"></div>
+      <div class="ball b13 invisible"></div>
+      <div class="ball b14 invisible"></div>
+      <div class="ball b15 invisible"></div>
+      <div class="ball b16 invisible"></div>
+      <div class="ball b17 invisible"></div>
+      <div class="ball b18 invisible"></div>
+      <div class="ball b19 invisible"></div>
+      <div class="ball b20 invisible"></div>
+      <div class="ball b21 invisible"></div>
+      <div class="ball b22 invisible"></div>
+      <div class="ball b23 invisible"></div>
+      <div class="ball b24 invisible"></div>
+      <div class="ball b25 invisible"></div>
+      <div class="ball b26 invisible"></div>
+      <div class="ball b27 invisible"></div>
+      <div class="ball b28 invisible"></div>
+      <div class="ball b29 invisible"></div>
+      <div class="ball b30 invisible"></div>
+      <div class="ball b31 invisible"></div>
+      <div class="ball b32 invisible"></div>
+      <div class="ball b33 invisible"></div>
+      <div class="ball b34 invisible"></div>
+      <div class="ball b35"></div>
+    </div>
+    <h1 style="text-align: center">
+      Score :
+      <div class="score">0</div>
+    </h1>
+
+    <div style="text-align: center">
+      <button onclick="countdown()">Start Game</button>
+    </div>
+  </body>
+</html>

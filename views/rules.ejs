@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rules</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: rgb(21, 46, 46);
+        }
+        .grid{
+            margin-left: 4vw;
+            margin-top: 10vh;
+            margin-bottom: 10vh;
+            display: grid;
+            grid-template-columns: auto auto;
+            row-gap: 5vh;
+            width: 100%;
+        }
+        .item{
+            margin-left: 1.5vw;
+        }
+        .image{
+            width: 40vw;
+            height: 400px;
+            transition: all 1s;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="brand">
+            <img class="logo" src="images/logo.png" />
+            <div class="brand-title">ConsoleJam</div>
+        </div>
+        <ul>
+            <% navbar.forEach((item)=>{%>
+                <li><%-item%></li>
+            <%})%>
+        </ul>
+    </nav>
+  
+    <section class="grid">
+        <div class="item"><iframe src="https://www.youtube.com/embed/5SdW0_wTX5c" class="image"></iframe></div>
+        <div class="item"><iframe src="https://www.youtube.com/embed/2dsHuU10udY" class="image"></iframe></div>
+        <div class="item"><iframe src="https://www.youtube.com/embed/WWcTnGX8yyQ" title="YouTube video player" class="image"></iframe></div>
+        <div class="item"><iframe src="https://www.youtube.com/embed/WnWPXZ6vQB8" class="image"></iframe></div>
+        <div class="item"><iframe src="https://www.youtube.com/embed/MKT6Uhk5-Iw" class="image"></iframe></div>
+        <div class="item"><iframe src="https://www.youtube.com/embed/PK7zc28IGPc" class="image"></iframe></div>
+    </section>
+</body>
+</html>

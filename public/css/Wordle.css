@@ -1,0 +1,86 @@
+/*style wordle with classes wordle wordle-title wordle-content wordle-content-left wordle-content-left-title wordle-content-left-text wordle-content-right wordle-content-right-title wordle-content-right-text*/
+*{
+    margin:0;
+    padding:0;
+    color: ghostwhite;
+}
+html,body{
+  height:100%;
+  font-family:Geneva, Verdana, sans-serif;
+  background-color: black;
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+#gameBoard{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50%;
+    width: 100%;
+    flex-direction: column;
+}
+#guess1,#guess2,#guess3,#guess4,#guess5,#guess0{
+    display: flex;
+    justify-content: space-evenly;
+    width: 25%;
+}
+#guess1>div,#guess2>div,#guess3>div,#guess4>div,#guess5>div,#guess0>div{
+    border:2px solid grey;
+    border-radius:10px;
+    width:3.5vw;
+    height:3.5vw;
+    background:white;
+    color:black;
+    text-align: center;
+    font-size: 2.5vw;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Game-keyboard-row{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    width: 55%;
+    position: relative;
+    padding-top: 1vw;
+    left: 25%;
+}
+.Game-keyboard-row:nth-child(2){
+    left:27.5%;
+}
+.Game-keyboard-row:nth-child(3){
+    width: 60%;
+}
+.Game-keyboard-button{
+    border:2px solid grey;
+    border-radius:2px;
+    width:3.5vw;
+    height:3.5vw;
+    background:white;
+    color:black;
+    text-align: center;
+    font-size: 2.5vw;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+.Game-keyboard-button-wide{
+    border:2px solid grey;
+    border-radius:10px;
+    width:7vw;
+    height:3.5vw;
+    background:white;
+    color:black;
+    text-align: center;
+    font-size: 2.5vw;
+    font-weight: bolder;
+    margin-right: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Game-keyboard-button-wide:nth-child(2){
+    margin-left: 2px;
+}

@@ -1,0 +1,9 @@
+{
+    "rockImage":"<img src='/images/Rock.png' alt='rock'>",
+    "paperImage":"<img src='/images/Paper.png' alt='paper'>",
+    "scissorsImage":"<img src='/images/Scissors.png' alt='Scissors'>",
+    "outcome":[[["Draw! Rock and Rock",0],["Computer beats player! Paper covers Rock",-1],["Player beats computer! Rock crushes Scissors",1]],
+               [["Player beats computer! Paper covers Rock",1],["Draw! Paper and Paper",0],["Computer beats player! Scissors cuts Paper",-1]],
+               [["Computer beats player! Rock crushes Scissors",-1],["Player beats computer! Scissors cuts paper",1],["Draw! Scissors and Scissors",0]]
+              ]
+}

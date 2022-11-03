@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+   
+    <style>
+    
+body{
+  background-color: rgb(21, 46, 46);
+}
+.rules-heading{
+  font-size: 40px;
+  text-align: center;
+  font-family: cursive;
+  color: white;
+  margin-top: 20px;
+}
+span{
+  background-color:white;
+  width:150px;
+}
+.grid {
+  margin-left: 2vw;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 5vh;
+  width: 100%;
+}
+.item {
+  margin-left: 1vw;
+}
+.image {
+  width: 44vw;
+  height: 400px;
+  transition: all 1s;
+}
+.image:hover {
+  border-radius: 7%;
+  cursor: pointer;
+}
+
+    </style>
+     <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="brand"> <img class="logo" src="/images/logo.png"><div class="brand-title">ConsoleJam</div></div>
+         <ul>
+            <% navbar.forEach((item)=>{%>
+              <li><%-item%></li>
+            <%})%>
+         </ul>
+     </nav>
+<h1 class="rules-heading">LIBRARY</h1>
+    <section class="grid">
+        <% data.games.forEach((gameLink)=>{%>
+        <div class="item"><%-gameLink%></div>
+        <%})%>
+    </section>
+  </body>
+</html>

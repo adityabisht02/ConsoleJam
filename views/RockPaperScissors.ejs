@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="/css/rpsStyles.css">
+    <script src="/resources/rpsScript.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="brand"> <img class="logo" src="/images/logo.png"><div class="brand-title">ConsoleJam</div></div>
+            <ul>
+                <% navbar.forEach((item)=>{%>
+                    <li><%-item%></li>
+                <%})%>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="gameBoard">
+            <div id="ruleSvg">
+                
+            </div>
+            <div id="result">
+
+            </div>
+            <div class="aiRoll">
+                <div class="rollImg" id="img1">
+                </div>
+                <div class="rollImg" id="img2">
+                </div>
+                <div class="rollImg" id="img3">
+                </div>
+            </div>
+            <div class="playerRoll">
+                <div class="PlayerChoice" id="playerChoiceRock">
+                    <img src="/images/Rock.png" alt="Rock Button">
+                </div>
+                <div class="PlayerChoice" id="playerChoicePaper">
+                    <img src="/images/Paper.png" alt="Paper Button">
+                </div>
+                <div class="PlayerChoice" id="playerChoiceScissors">
+                    <img src="/images/Scissors.png" alt="Scissors Button">
+                </div>
+                <div class="playerStart">
+                    <!-- <button id="startBtn">Start</button> -->
+                </div>
+            </div>
+        </div>
+        <div class="scoreBoard">
+            <div class="currentMatchScore">Current Match</div>
+            <div class="scoreCurrent">
+                Computer
+                <div id="aiBoard">
+                    0
+                </div>
+                <div style="font-size:x-large;">:</div>
+                Player
+                <div id="playerBoard">
+                    0
+                </div>
+            </div>
+            <div class="allTimeBest">All Time Best</div>
+            <div class="scoreBest">
+                Computer
+                <div id="aiBoardBest">
+                    0
+                </div>
+                <div style="font-size:x-large;">:</div>
+                Player
+                <div id="playerBoardBest">
+                    0
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>
